@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exhibit: A - List of Agreed Time and Fees</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            font-size: 12px;
+            line-height: 20px;
+            width: 32%;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #2C3E50;
+            font-size: 36px;
+            line-height: 40px;
+        }
+        h2 {
+            color: #04265e;
+            font-size: 12px;
+            line-height: 14px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 12px;
+            line-height: 14px;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #04265e;
+            color: white;
+        }
+        p {
+           
+            font-size: 12px;
+            line-height: 14px;
+        }
+        /* ul {
+           
+            font-size: 12px;
+            line-height: 14px;
+        }
+        li {
+           
+            font-size: 12px;
+            line-height: 14px;
+        } */
+        .signatures {
+            margin-top: 40px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .signature-block {
+            width: 45%;
+        }
+        .signature-block p {
+            margin: 5px 0;
+        }
+
+        /* @media (max-width: 1400px) {
+            .container{
+                width: 45%;
+            }
+         }
+         @media (max-width: 992px) { 
+            .container{
+                width: 50%;
+            }
+          }
+          @media (min-width: 768px) { 
+            .container{
+                width: 75%;
+            } }
+
+            @media (max-width: 576px) { 
+            .container{
+                width: 90%;
+            }
+          } */
+          #prevBtn, #nextBtn {
+            padding: 10px 20px;
+            background-color: #0c0A48;
+            color: #FFFFFF;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 18px;
+        }
+
+       
+    </style>
+</head>
+<body>
+    
+  <!-- Header Section -->
+  <nav class="navbar navbar-expand-lg navbar-custom">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav w-100">
+            <li class="nav-item">
+                <div id="prevBtn"> &#8592;</div>
+            </li>
+            <li class="nav-item mx-auto">
+                <a class="navbar-brand" href="#">
+                    <img src="https://images.cdn-files-a.com/uploads/2190159/400_64f0e914d9496.png" alt="Logo" style="width: 250px;">
+                </a>
+            </li>
+            <div class="nav-item bb">
+                <button id="nextBtn">Next</button>
+            </div>
+        </ul>
+    </div>
+    <script src="navigation.js"></script>
+</nav>
+
+    <div class="container">
+        <h1>Exhibit: A</h1>
+        <h2>List of Agreed Time and Fees</h2>
+        <p><strong>Date:</strong> June 26th, 2024</p>
+        <p>This List of Agreed Time and Fees dated as of June 26th, 2024 (the “Effective Date”), is entered into by and between Jenkins Dentistry for Kids (“Customer”) and CE Computech LLC (“CEC”), pursuant to the terms and conditions set forth in the Master Services Agreement (“MSA”), dated as of June 26th, 2024, between the parties.</p>
+
+        <h2>1. Services Offered</h2>
+        <p>CEC will be providing service of Dental revenue Cycle Management back-office work to the Client (the “Services”).</p>
+
+        <h2>2. CEC Responsibilities</h2>
+        <p>Within the Services to be provided, CEC will provide the following:</p>
+        <ul>
+            <li>List of updated protocols to perform assigned task based on updates received from Client.</li>
+            <li>Accomplish the above within a mutually agreed upon time frame.</li>
+            <li>Communicate with Client on a regular basis and provide mutually agreed upon reports detailing CEC activity.</li>
+            <li>Make all reasonable efforts to ensure a minimum 97% overall accuracy on the total volumes per Month.</li>
+            <li>Make team available to work 5 days a week, Monday to Friday excluding national holidays.</li>
+        </ul>
+
+        <h2>3. Client Responsibilities</h2>
+        <p>Client shall provide CEC with:</p>
+        <ul>
+            <li>List of protocols to be followed to perform assigned task.</li>
+            <li>Access to practice management system to enter appropriate details.</li>
+            <li>A list of policies and procedures utilized by Client.</li>
+            <li>Specific software and procedural training as may be required to perform its obligations under this Exhibit.</li>
+            <li>Updates through training and documentation on operating manuals as software or procedures change.</li>
+        </ul>
+
+        <h2> Pricing</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Category</th>
+                    <th>Future Day</th>
+                    <th>Same/Next Day</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Full Breakdown Form</td>
+                    <td>$2.58</td>
+                    <td>$2.78</td>
+                    <td>Full breakdown form</td>
+                </tr>
+                <tr>
+                    <td>Re-verification (Yes/No)</td>
+                    <td>$1.38</td>
+                    <td>$1.48</td>
+                    <td>EV check/short form</td>
+                </tr>
+                <tr>
+                    <td>Medicaid</td>
+                    <td>$0.86</td>
+                    <td>$0.86</td>
+                    <td>Through Portals</td>
+                </tr>
+                <tr>
+                    <td>Not Eligible</td>
+                    <td>$0.86</td>
+                    <td>$0.86</td>
+                    <td>Eligibility failures</td>
+                </tr>
+                <tr>
+                    <td>New Plan Creation</td>
+                    <td>$0.98</td>
+                    <td>$0.98</td>
+                    <td>Applicable only in case a new plan creation is needed</td>
+                </tr>
+                <tr>
+                    <td>Fee Schedule Entry Per CDT</td>
+                    <td colspan="2">$0.07</td>
+                    <td>Maximum fee per each fee schedule entry is capped at $23.50</td>
+                </tr>
+                <tr>
+                    <td>Initial Claim batch processing</td>
+                    <td colspan="2">$0.07</td>
+                    <td>Batch processing</td>
+                </tr>
+                <tr>
+                    <td>Initial claim generation & rejections</td>
+                    <td colspan="2">$0.36</td>
+                    <td>Initial claim generation/ Medicaid website</td>
+                </tr>
+                <tr>
+                    <td>Cash Posting</td>
+                    <td colspan="2">$0.86</td>
+                    <td>Per claim</td>
+                </tr>
+                <tr>
+                    <td>Indexing</td>
+                    <td colspan="2">$0.17</td>
+                    <td>Per EOB/Document labelled and indexed</td>
+                </tr>
+                <tr>
+                    <td>Claim Status</td>
+                    <td colspan="2">$1.75</td>
+                    <td>Per claim analyses and gathering the current status from Insurance</td>
+                </tr>
+                <tr>
+                    <td>Claim Status/Re-sub & Adjudication</td>
+                    <td colspan="2">$2.25</td>
+                    <td>Per claim analyses+ status + re-sub/adjustment</td>
+                </tr>
+                <tr>
+                    <td>Credentialing</td>
+                    <td colspan="2">$50.00</td>
+                    <td>Per provider per Insurance</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>5. Payment for Services</h2>
+        <p>CEC will invoice Client on a monthly basis. Invoice terms are net 10 days.</p>
+
+        <h2>6. Default</h2>
+        <p>The term of this Exhibit shall continue unless otherwise terminated either mutually between the Parties or unilaterally by either Party by providing written notice of termination (“Notice of Termination”) to the other Party.</p>
+
+        <div class="signatures">
+            <div class="signature-block">
+                <p><strong>JENKINS DENTISTRY FOR KIDS</strong></p>
+                <p>By:</p>
+                <p>Name:</p>
+                <p>Date:</p>
+                <p>Email:</p>
+            </div>
+            <div class="signature-block">
+                <p><strong>CE COMPUTECH LLC</strong></p>
+                <p>By: Viveka (VP-Client Services)</p>
+                <p>Name: Viveka</p>
+                <p>Date:</p>
+                <p>Email: Viveka@cecomputech.com</p>
+            </div>
+        </div>
+    </div>
+    <script>
+       // Get the current page
+const currentPage = window.location.pathname.split('/').pop();
+
+// Define the pages in sequence
+const pages = ['index.html', 'page2.html', 'page3.html', 'page4.html', 'page5.html'];
+
+// Find the current page index
+const currentPageIndex = pages.indexOf(currentPage);
+
+// Add event listener for "Prev" button
+document.getElementById('prevBtn').addEventListener('click', function() {
+    if (currentPageIndex > 0) {
+        window.location.href = pages[currentPageIndex - 1];
+    }
+});
+
+// Add event listener for "Next" button
+document.getElementById('nextBtn').addEventListener('click', function() {
+    if (currentPageIndex < pages.length - 1) {
+        window.location.href = pages[currentPageIndex + 1];
+    }
+});
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Layout</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa; /* Light background color */
+            font-family: 'Poppins', Arial, sans-serif;
+            color:rgba(12, 10, 72);
+}
+        
+        .header-section, .image-section, .text-section, .bg-section {
+            padding: 20px;
+            text-align: center;
+        }
+        .one{
+           
+            font-size: 14px;
+            line-height: 20px;
+            font-weight: 400;
+            color:rgba(12, 10, 72);
+
+        }
+        .next-button {
+            text-align: right;
+            padding: 20px;
+        }
+        .btn{
+            background-color: #CF0276;
+            border: none;
+        }
+        .btn:hover{
+            background-color: #e69ac5;
+            border: none;
+        }
+       .line{
+        width: 35%;
+        margin: 0 auto;
+        border-radius: 0%;
+        border-top: 2px solid rgb(255, 21, 153); 
+        font-weight: bold;
+        color: #fd2ea3;
+
+       }
+
+       @media only screen and (max-width: 767px) {
+  
+  .mobile {
+    font-size: 24px !important;
+    line-height: 30px !important;
+  }
+}
+#prevBtn, #nextBtn {
+            padding: 10px 20px;
+            background-color: #0c0A48;
+            color: #FFFFFF;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 18px;
+        }
+
+    </style>
+</head>
+<body>
+
+
+    <!-- Header Section -->
+
+    <nav class="navbar navbar-expand-lg navbar-custom">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav w-100">
+                <li class="nav-item">
+                    <div id="prevBtn"> &#8592;</div>
+                </li>
+                <li class="nav-item mx-auto">
+                    <a class="navbar-brand" href="#">
+                        <img src="https://images.cdn-files-a.com/uploads/2190159/400_64f0e914d9496.png" alt="Logo" style="width: 250px;">
+                    </a>
+                </li>
+                <div class="nav-item bb">
+                    <button id="nextBtn">Next</button>
+                </div>
+            </ul>
+        </div>
+        <script src="navigation.js"></script>
+    </nav>
+<!-- <div class="container header-section">
+    <div class="row align-items-center">
+        <div class="col text-center">
+            <h2 class="one">Welcome</h2>
+            <p style="font-size: 13px;font-weight: 400;line-height: 20px;">Page <span style="color: #CF0276;">1</span> of 6</p>
+        </div>
+       
+        
+        <div class="col-auto d-flex justify-content-end align-items-center">
+            
+            <i class="HBIcon__Icon-sc-bzmbx4-0 hPolMi ms-2">
+                <svg width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <g id="receipt-24" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <path d="M21,1 L21,22.618034 L18,21.118034 L16,22.118034 L14,21.118034 L12,22.118034 L10,21.118034 L8,22.118034 L6,21.118034 L3,22.618034 L3,1 L21,1 Z M19,3 L5,3 L5,19.381966 L6,18.881966 L8,19.881966 L10,18.881966 L12,19.881966 L14,18.881966 L16,19.881966 L18,18.881966 L19,19.381966 L19,3 Z M13,14 L13,16 L7,16 L7,14 L13,14 Z M17,14 L17,16 L15,16 L15,14 L17,14 Z M13,10 L13,12 L7,12 L7,10 L13,10 Z M17,10 L17,12 L15,12 L15,10 L17,10 Z M13,6 L13,8 L7,8 L7,6 L13,6 Z M17,6 L17,8 L15,8 L15,6 L17,6 Z" id="Combined-Shape" fill="#000000" fill-rule="nonzero"></path>
+                    </g>
+                </svg>
+            </i>
+            <i class="HBIcon__Icon-sc-bzmbx4-0 hlTMhS ms-2">
+                <svg width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <g id="dots-vertical-24" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <path d="M12,10 C13.1045695,10 14,10.8954305 14,12 C14,13.1045695 13.1045695,14 12,14 C10.8954305,14 10,13.1045695 10,12 C10,10.8954305 10.8954305,10 12,10 Z M5,10 C6.1045695,10 7,10.8954305 7,12 C7,13.1045695 6.1045695,14 5,14 C3.8954305,14 3,13.1045695 3,12 C3,10.8954305 3.8954305,10 5,10 Z M19,10 C20.1045695,10 21,10.8954305 21,12 C21,13.1045695 20.1045695,14 19,14 C17.8954305,14 17,13.1045695 17,12 C17,10.8954305 17.8954305,10 19,10 Z" id="Combined-Shape" fill="#000000" transform="translate(12.000000, 12.000000) rotate(90.000000) translate(-12.000000, -12.000000) "></path>
+                    </g>
+                </svg>
+            </i>
+            <button id="prevBtn">Prev</button>
+            <button id="nextBtn">Next</button>
+        
+            <script src="navigation.js"></script>
+          
+            <button class="btn btn-primary ms-2">Next</button>
+        </div>
+    </div>
+</div> -->
+
+    <!-- Image Section -->
+    <div class="container image-section">
+        <img src="https://res.cloudinary.com/honeybook/image/upload/f_auto,fl_lossy,q_auto/HoneyBook_Proposal_Header_th6d3x" class="img-fluid" alt="Placeholder Image">
+    </div>
+
+    <!-- Horizontal Line -->
+      <hr class="line">
+
+
+    <!-- First Text Section -->
+    <div class="container text-section">
+        <p class="mobile" style="font-size: 36px;line-height: 52px;font-weight: 700;color: rgba(12, 10, 72);text-align: center;"><strong>Proposal for Brand Awareness, Social Media Management and Business Development</strong></p>
+        <p style="font-size:16px;line-height:22px;font-weight: 400;color: #0c0A48;text-align: left;"><i>Prepared For:</i><br><br>
+            <span style="color: #fd2ea3;font-size: 24px;"><strong>Viveka and Varun</strong></span><br><br>
+           <strong style="font-weight: 400;">CEC - Clinical Excel Computech Project</strong></p>
+    </div>
+
+    <!-- Final Horizontal Line -->
+    <hr class="line">
+
+
+  
+    <!-- Second Text Section -->
+    <div class="container text-section">
+        <p style="font-size: 16px;line-height: 20px;font-weight: 400;">Sarah Ruberg<br>
+        <b>Chief Executive Officer + Founder, Our Thrive Tribe</b><br>
+            
+            <span style="font-size: 14px;line-height: 16px;color: rgb(253, 46, 163);text-decoration: underline;"><strong>ourthrivetribe.co</strong></span>
+        </p>
+       
+    </div>
+
+
+
+    <!-- Background Section -->
+    <div class="bg-section" style="background-color: rgb(12, 10, 72);"></div>
+
+    
+    <!-- Next Button Section -->
+    <!-- <div class="container next-button">
+        <button class="btn btn-primary">Next</button>
+    </div> -->
+
+  <script>
+    // Get the current page
+const currentPage = window.location.pathname.split('/').pop();
+
+// Define the pages in sequence
+const pages = ['index.html', 'page2.html', 'page3.html', 'page4.html', 'page5.html'];
+
+// Find the current page index
+const currentPageIndex = pages.indexOf(currentPage);
+
+// Add event listener for "Prev" button
+document.getElementById('prevBtn').addEventListener('click', function() {
+    if (currentPageIndex > 0) {
+        window.location.href = pages[currentPageIndex - 1];
+    }
+});
+
+// Add event listener for "Next" button
+document.getElementById('nextBtn').addEventListener('click', function() {
+    if (currentPageIndex < pages.length - 1) {
+        window.location.href = pages[currentPageIndex + 1];
+    }
+});
+
+  </script>
+
+   
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page Layout</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .b1 {
+            background-color: rgb(255, 255, 255);
+            padding: 20px;
+        }
+        .b2 {
+            background-color: rgb(12, 10, 72);
+            padding: 20px;
+        }
+        .image-section {
+            text-align: center;
+            padding: 20px 0;
+        }
+        .image-section img {
+            max-width: 100px; /* Fixed size for the icon */
+            height: auto;
+        }
+        .content-section {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .content-section hr {
+            width: 50%;
+            margin: 20px auto;
+        }
+        .row {
+            align-items: center;
+        }
+        .one{
+           
+           font-size: 14px;
+           line-height: 20px;
+           font-weight: 400;
+           color:rgba(12, 10, 72);
+
+       }
+       .next-button {
+           text-align: right;
+           padding: 20px;
+       }
+       .btn{
+           background-color: #CF0276;
+           border: none;
+       }
+       .bg-section{
+        padding: 30px;
+        text-align: center;
+       }
+       .bt{
+        font-size: 18px; 
+        line-height: 24px; 
+        color: #FFFFFF;
+       
+       }
+       .text{
+        font-size: 18px;
+        line-height: 24px;
+        color: rgb(12, 10, 72);
+        font-family: Poppins-Regular;
+        text-align: center;
+       }
+       .t1{
+      display: flex;
+       justify-content: center;
+       margin-top: 20px;
+       
+       }
+       .tt1 {
+        display: flex;
+       justify-content: center;
+       margin-top: 20px;
+       flex-direction: column;
+       align-items: center;
+       }
+       .t2{
+        max-width: 1140px;
+        width: 100%;
+        margin: auto;
+        text-align: center;
+        /* flex-basis: 38%; */
+       }
+       .tt2 {
+        max-width: 1140px;
+        width: 100%;
+        margin: auto;
+        text-align: center;
+       }
+       .d1{
+        border-radius: 25px !important;
+       }
+    .content-section{
+        background-color: rgb(12, 10, 72);
+        padding: 35px;
+        margin-bottom: 0px;
+    }
+    .image-section img{
+        max-width: 250px;
+    }
+
+    .r2{
+        font-size: 18px;
+         line-height: 26px;
+          color: #FFFFFF;
+          font-size: 18px;
+          margin-top: 25px;
+    }
+    @media only screen and (max-width: 767px) {
+        .banner_img_1 {
+            align-items: center !important;
+        }
+        .banner_img_2 {
+            justify-content: center !important;
+        }
+            .t2 {
+                max-width: 100%;
+            }
+
+            .content-section hr {
+                width: 30%;
+            }
+
+            .next-button {
+                text-align: center;
+                padding: 10px 0;
+            }
+
+            .bt {
+                font-size: 16px;
+            }
+           
+        }
+        .one{
+            margin-top: 30px;
+    
+        }
+
+        #prevBtn, #nextBtn {
+            padding: 10px 20px;
+            background-color: #0c0A48;
+            color: #FFFFFF;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 18px;
+        }
+ 
+        
+    </style>
+       
+</head>
+<body>
+
+
+     <!-- Header Section -->
+       <!-- Header Section -->
+       <nav class="navbar navbar-expand-lg navbar-custom">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav w-100">
+                <li class="nav-item">
+                    <div id="prevBtn"> &#8592;</div>
+                </li>
+                <li class="nav-item mx-auto">
+                    <a class="navbar-brand" href="#">
+                        <img src="https://images.cdn-files-a.com/uploads/2190159/400_64f0e914d9496.png" alt="Logo" style="width: 250px;">
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <button id="nextBtn">Next</button>
+                </li>
+            </ul>
+        </div>
+        <script src="navigation.js"></script>
+    </nav>
+    
+
+    <!-- Image Section -->
+   
+
+    <!-- Main Heading, HR, and Subheading Section -->
+    <div class="content-section">
+        <h1 style="font-size: 36px;line-height: 42px;color: #ffffff;text-align: center;">Hello from Our Thrive Tribe!</h1>
+        <hr style="width: 8%;border-radius: 8.5%;border-top: 3.8px solid rgb(255, 255, 255);">
+        <h2 style="font-size: 18px;line-height: 24px;color: #ffffff;text-align: center;"><strong>Ready to make some magic?<br>
+
+            The Unicorns of Our Thrive Tribe are experts in growing businesses in the dental industry socially (without any cringy "Happy<br> National Root Canal Day!" posts). <br><br>We know how to utilize social media to build awareness in our community.</strong>
+
+        </h2>
+    </div>
+   
+    
+    <div class="bg-section" style="background-color: rgb(253, 46, 163);"></div>
+
+    <!-- Background Section 1: Left Text, Right Image -->
+    <div class="container-fluid b1 t1">
+        <div class="row d-flex align-items-start t2">
+            <!-- Left Section: Text -->
+            <div class="col-md-6 d-flex justify-content-end flex-column mt-4">
+                <p class="text">
+                    At Our Thrive Tribe, we are passionate about making a difference for those in the dental community and helping businesses achieve growth. With this at our core, we want to work with like-minded dental professionals who care about their teams, their patients, and their clients. So if your goal is to make people be better, feel better, look better, or stay better--then we need to collaborate!
+                </p>
+                <p class="text">
+                    Our Thrive Tribe takes an ownership mindset when it comes to our work. This means every action we take is as if we were an equal owner of your practice. Don't worry, we're not trying to take anything from you, but having someone on your team who is looking out for your best interests first and foremost is game-changing.
+                </p>
+            </div>
+            <!-- Right Section: Image -->
+            <div class="col-md-6 d-flex align-items-start flex-column banner_img_1">
+                <img src="https://res.cloudinary.com/honeybook/image/upload/f_auto,fl_lossy,q_auto/Our_Thrive_Tribe_-_Proposal_Headshot_2_h2ekla" class="img-fluid d1" alt="Placeholder Image">
+            </div>
+        </div>
+    </div>
+    
+
+    
+    
+    <!-- Background Section -->
+    <div class="bg-section" style="background-color: rgb(253, 46, 163);"></div>
+
+    <div class="container-fluid b2 tt1">
+        <div class="row d-flex align-items-start tt2">
+            <!-- Left Image - Align start -->
+            <div class="col-md-6 d-flex justify-content-end banner_img_2">
+                <img src="https://res.cloudinary.com/honeybook/image/upload/c_crop,h_534,w_400,x_0,y_0/f_auto,fl_lossy,q_auto/Our_Thrive_Tribe_-_Proposal_Headshot_1_jg5wz9" class="img-fluid" alt="Placeholder Image">
+                
+            </div>
+            <!-- Right Dummy Text - Align start -->
+            <div class="col-md-6 d-flex flex-column text">
+                <h3 style="font-size: 36px; line-height: 42px; color: #CF0276;">Our Team</h3>
+                <p class="r2">
+                    <strong>
+                        So what sets us apart from the other social media and business development agencies? We know 
+                        <span style="color: #05EEFF;">dental.</span> <br><br>
+                        Our team has over 10 years of experience working in the dental industry, in both marketing and social media management.<br><br>
+                        This means that your posts are going to be accurate, informational, and tailored to your business because we know what we are talking about.<br><br> 
+                        We know who to connect you with in the industry, what events you should attend, and what groups to be a part of.
+                    </strong>
+                </p>
+            </div>
+        </div>
+        <!-- Team members section below both the image and text -->
+        <div class="row mt-4" style="justify-content: center;">
+            <div class="col-10 text-center bt">
+                <p><strong>Sarah Ruberg, Chief Executive Officer + Founder</strong></p>
+                <p>Craig Iott, Chief Operating Officer</p>
+                <p>Marissa G., Accounts Success Manager</p>
+                <p>Kaeyln M., Unicorn Support</p>
+                <p>Dani P., Social Media Manager</p>
+                <p>Sydney G., Social Media Manager</p>
+                <p>Mia U., Social Media Manager</p>
+                <p>Trevor C., Web Designer & Creative</p>
+                <p>Adlai W., Executive Assistant</p>
+            </div>
+        </div>
+        
+    </div>
+    
+
+    <!-- Background Section 2: Left Image, Right Text -->
+
+ 
+
+
+<!--     
+     <div class="container next-button">
+        <button class="btn btn-primary">Next</button>
+    </div> -->
+
+    <script>
+        // Get the current page
+const currentPage = window.location.pathname.split('/').pop();
+
+// Define the pages in sequence
+const pages = ['index.html', 'page2.html', 'page3.html', 'page4.html', 'page5.html'];
+
+// Find the current page index
+const currentPageIndex = pages.indexOf(currentPage);
+
+// Add event listener for "Prev" button
+document.getElementById('prevBtn').addEventListener('click', function() {
+    if (currentPageIndex > 0) {
+        window.location.href = pages[currentPageIndex - 1];
+    }
+});
+
+// Add event listener for "Next" button
+document.getElementById('nextBtn').addEventListener('click', function() {
+    if (currentPageIndex < pages.length - 1) {
+        window.location.href = pages[currentPageIndex + 1];
+    }
+});
+
+    </script>
+
+
+</body>
+   
+
+</html>
