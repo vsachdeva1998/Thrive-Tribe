@@ -170,7 +170,7 @@
 
   <script>
     // Get the current page
-const currentPage = window.location.pathname.split('/').pop();
+const currentPage = window.location.pathname.split('/').pop() || 'index.html';
 
 // Define the pages in sequence
 const pages = ['index.html', 'page2.html', 'page3.html', 'page4.html', 'page5.html'];
